@@ -5,6 +5,11 @@
 using namespace std;
 int main(int argc, char*argv[])
 {
+	if(argc != 3)
+	{
+		cout << "bankers.cpp : insufficient arguments. Retry. LOL";
+		exit(0);
+	}
 
 	///////////////////////////File streams/////////////////////////////
 	fstream infile(argv[1], std::ios_base::in);
